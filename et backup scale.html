@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>My LMS - ET</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+@media screen and (max-width:700px) {
+    .player {
+        width :100%;
+        height: 240px;
+        padding-left: 0px;
+    }
+    .main {
+        width: 100%;
+        height: auto;
+        
+    }
+
+}
+
+        .evelink {
+            color: rgb(121, 206, 206);
+            font-weight: bold;
+        }
+        .evelink:hover {
+            color: rgb(93, 212, 82);
+            font-weight: bold;
+        }
+        .main {
+            width: 65%;
+            height: auto;
+            min-width: 400px;
+            float: left;
+            padding-left: 25px; 
+            padding-top: 25px;
+        }
+        .link {
+            margin-top: 12px;
+            float: right;
+            width: auto;
+            height: auto;
+            margin-right: 70px;
+            margin-left: 30px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body style="background: rgb(24,24,24);">
+    <div style="height: 90vh;width: 100%;">
+        <nav class="navbar navbar-light navbar-expand-md" style="background: rgb(0,151,136);font-family: Acme, sans-serif;">
+            <div class="container-fluid"><a class="navbar-brand" href="../index.html">My LMS&nbsp;<img src="assets/img/icons8-precision-64.png" style="width: 25px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link active" href="../index.html" style="width: 50%;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About US</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
+        <div style="background: #fff175;padding-top: 4px;"></div>
+        <div class="fullwidth">
+        <div class="main">
+            <iframe id="vdo" class="player"  width="853vh" height="480vh" src="https://www.youtube.com/embed/videoseries?list=PLuaPP38ddid34nZhuHwnRPjViZZ7-T1hk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <br>
+            <a  href="https://notexe.com/lsLyLOKDxy" target="_blank"><b>➤ Download Videos</b></a>
+        </div>
+        <div class="link">
+            <div style="width: 30%; color: #fff175;">
+                <ul class="list-group">
+                    <li class="list-group-item" style="background: rgb(56,56,56);width: 300px;"><span style="font-size: 25px;font-weight: bold;">Video Library</span>
+                        <h5 style="margin-left: 11px;"><em><span style="text-decoration: underline;">Theory</span></em></h5>
+                        <ul type="square">
+                            <li><a title="Production Completed Video Playlist." class="evelink" href="#" onclick="prodlink()">Production</a></li>
+                            <li><a title="Diode Completed Video Playlist." class="evelink" href="#" onclick="diodelink()">Diode</a></li>
+                            <li><a title="Transistors Completed Video Playlist."  class="evelink" href="#" onclick="translink()">Transistor</a></li>
+                            <li><a title="House Wiring Completed Video Playlist."  class="evelink" href="#" onclick="houselink()">House Wiring</a></li>
+                            <li><a title="Survey Completed Video Playlist."  class="evelink" href="#" onclick="surveylink()">Survey</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item" style="background: rgb(56,56,56);width: 300px;">
+                        <h5 style="margin-left: 11px;"><em><span style="text-decoration: underline;">Revision</span></em></h5>
+                        <ul>
+                            <li><a  class="evelink" href="#" onclick="revilink()">All Videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item" style="background: rgb(56,56,56);width: 300px;">
+                        <h5 style="margin-left: 11px;"><em><span style="text-decoration: underline;">Paper Discussion</span></em></h5>
+                        <ul>
+                            <li><a  class="evelink" href="#" onclick="paperlink()">All Videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item" style="background: rgb(56,56,56);width: 300px;">
+                        <h5 style="margin-left: 11px;"><em><span style="text-decoration: underline;">Practical</span></em></h5>
+                        <ul>
+                            <li><a  class="evelink" href="#" onclick="praclink()">All Videos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div style="margin-top: -25px;">
+        <h6 class="copyright" style="margin-top: 40%; text-align: right;background: rgba(102,102,102,0);color: #bebebe;font-family: Acme, sans-serif;padding-right: 14px;">FREE CreatoR © 2021</h6>
+    </div>
+    <script>
+        function prodlink() {
+            var video = document.getElementById("vdo");
+            vdo.src = "https://www.youtube.com/embed/videoseries?list=PLuaPP38ddid34nZhuHwnRPjViZZ7-T1hk";
+        }
+        function diodelink() {
+            var video = document.getElementById("vdo");
+            vdo.src = "https://www.youtube.com/embed/videoseries?list=PLuaPP38ddid3_UwIlsP8n4Uo1LgQ8eueB";
+        }
+        function translink() {
+            var video = document.getElementById("vdo");
+            vdo.src = "https://www.youtube.com/embed/videoseries?list=PLmOl9a6dG_-CgaYkqB0-f6UlIpsmPVL6C";
+        }
+        function houselink() {
+            var video = document.getElementById("vdo");
+            vdo.src = "https://www.youtube.com/embed/videoseries?list=PLuaPP38ddid00GSqLfek4Izxx2uV0OWe-";
+        }
+        function surveylink() {
+            var video = document.getElementById("vdo");
+            vdo.src = "https://www.youtube.com/embed/videoseries?list=PLmOl9a6dG_-BLBCsbxyr6M71oedcKrp3u";
+        }
+        function revilink() {
+            var video = document.getElementById("vdo");
+            vdo.src = "https://www.youtube.com/embed/videoseries?list=PLuaPP38ddid2LYCVGyzQ3IBgd53B3Z91y";
+        }
+        function paperlink() {
+            var video = document.getElementById("vdo");
+            vdo.src = "https://www.youtube.com/embed/videoseries?list=PLuaPP38ddid2YRA8DkJRlw7O4J9NvsyXj";
+        }
+        function praclink() {
+            var video = document.getElementById("vdo");
+            vdo.src = "https://www.youtube.com/embed/videoseries?list=PLmOl9a6dG_-ABTqixVwE9w3_FR5H7V7xI";
+        }
+    </script>
+        
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>
